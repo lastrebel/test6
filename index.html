@@ -13,7 +13,7 @@
                 -webkit-overflow-scrolling: touch;
             }
             .column {
-                background: #cfcfcf;
+                background: #e9ebee;
                 vertical-align: top;
                 padding:0px;
                 margin: 0px;
@@ -33,26 +33,42 @@
                 color: #cfcfcf;
                 background: grey;
                 width: 300px;
-                vertical-align: top;  
+                vertical-align: top;
             }
             .row {
                 display: inline-block;
                 color: #cfcfcf;
-                background: #f2f2f2;
                 width: 300px;
                 height: 100px;
                 vertical-align: top;
                 text-indent: 5px;
                 border-radius: 2px;
+                padding: 10px 0px 0px 0px ;
             }
-            .row_empty{
-                color: #f2f2f2;
-                opacity: ;
-                width: 300px;
-                height: 100px;
-                vertical-align: top;
-                text-indent: 5px;
+            .content {
+                display: block;
+                background: #f6f7f9;
+                max-height: 100px;
+                text-indent: 3px;
+                opacity: 0.5;
+                border-radius: 2px;
+                box-shadow: 0px 0px 1px #dfe0e4;
+                margin: 2px;
+                padding: 5px 0px;
+                overflow: auto;
             }
+            .done {
+                opacity: 1;
+            }
+            .left {
+                max-width: 96%;
+                vertical-align: middle;
+            }
+            .margin{
+                margin: 10px;
+                
+            }
+            
             .sticky {
   position: -webkit-sticky;
   position: -moz-sticky;
@@ -68,18 +84,32 @@
                 <td class="column nodash">
                     <table>
                         <tr class="row_header sticky"><th >7.7.2016</th></tr>
-                        <tr><td class="row_empty">Rutina</td></tr>
+                        <tr><td class="row nodash">Smoking
+                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
+                            <div class="content left"><div class="margin">22:50 smoked 1 joint in toilet<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            </div>
+                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
+                            <div class="content done">22:50 smoked 1 joint in toilet</div>
+                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
+                            <div class="content">22:50 smoked 1 joint in toilet</div>
+                            <div class="content done">22:50 smoked 1 joint in toilet</div>
+                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
+                            <div class="content">22:50 smoked 1 joint in toilet</div>
+                            </td>
+                        </tr>
                         <tr><td class="row">Schedule<br><br>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td></tr>
+                            <div  class="content left">
+                                <p class="margin">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></td></tr>
                         <tr><td class="row">Medicine</td></tr>
                     </table>
                 </td>
                 <td class="column nodash">
                     <table>
                         <tr><th class="row_header sticky">8.7.2016</th></tr>
-                        <tr><td class="row">Rutina</td></tr>
+                        <tr><td class="row nodash">Smoking</td></tr>
                         <tr><td class="row">Schedule</td></tr>
-                        <tr><td class="row_empty">Medicine</td></tr>
+                        <tr><td class="row">Medicine</td></tr>
                         <tr><td class="row">Sport</td></tr>
                         <tr><td class="row">Household</td></tr>
                     </table>
@@ -87,15 +117,19 @@
                 <td class="column nodash">
                     <table>
                         <tr><th class="row_header sticky">9.7.2016</th></tr>
-                        <tr><td class="row">Rutina</td></tr>
-                        <tr><td class="row_empty">Schedule</td></tr>
-                        <tr><td class="row_empty">Medicine</td></tr>
+                        <tr><td class="row nodash">Smoking
+                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
+                            <div class="content left">22:50 smoked 1 joint in toilet</div>
+                            
+                            </td></tr>
+                        <tr><td class="row">Schedule</td></tr>
+                        <tr><td class="row">Medicine</td></tr>
                     </table>
                 </td>
                 <td class="column nodash">
                     <table>
                         <tr><th class="row_header sticky">8.7.2016</th></tr>
-                        <tr><td class="row">Rutina</td></tr>
+                        <tr><td class="row nodash">Smoking</td></tr>
                         <tr><td class="row">Schedule</td></tr>
                         <tr><td class="row">Medicine</td></tr>
                     </table>
