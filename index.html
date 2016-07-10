@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .horizontal {
+                display: block;
+                background: white;
+                max-width: 900px;
+                max-height: 500px;
+                overflow: auto;
+                margin: auto;
+                padding:0px;
+                -webkit-overflow-scrolling: touch;
+            }
+            .column {
+                background: #cfcfcf;
+                vertical-align: top;
+                padding:0px;
+                margin: 0px;
+            }
+            
+            td {
+                border-top: dashed 1.5px;
+                padding:0px;
+                margin: 0px;
+                overflow: auto;
+                }
+            .nodash {
+                border-top: none;
+                }
+            
+            .row_header {
+                color: #cfcfcf;
+                background: grey;
+                width: 300px;
+                vertical-align: top;  
+            }
+            .row {
+                display: inline-block;
+                color: #cfcfcf;
+                background: #f2f2f2;
+                width: 300px;
+                height: 100px;
+                vertical-align: top;
+                text-indent: 5px;
+                border-radius: 2px;
+            }
+            .row_empty{
+                color: #f2f2f2;
+                opacity: ;
+                width: 300px;
+                height: 100px;
+                vertical-align: top;
+                text-indent: 5px;
+            }
+            .sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 2px;
+}
+        </style>
+    </head>
+    <body>
+        <table class="horizontal">
+            <tr>
+                <td class="column nodash">
+                    <table>
+                        <tr class="row_header sticky"><th >7.7.2016</th></tr>
+                        <tr><td class="row_empty">Rutina</td></tr>
+                        <tr><td class="row">Schedule<br><br>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</td></tr>
+                        <tr><td class="row">Medicine</td></tr>
+                    </table>
+                </td>
+                <td class="column nodash">
+                    <table>
+                        <tr><th class="row_header sticky">8.7.2016</th></tr>
+                        <tr><td class="row">Rutina</td></tr>
+                        <tr><td class="row">Schedule</td></tr>
+                        <tr><td class="row_empty">Medicine</td></tr>
+                        <tr><td class="row">Sport</td></tr>
+                        <tr><td class="row">Household</td></tr>
+                    </table>
+                </td>
+                <td class="column nodash">
+                    <table>
+                        <tr><th class="row_header sticky">9.7.2016</th></tr>
+                        <tr><td class="row">Rutina</td></tr>
+                        <tr><td class="row_empty">Schedule</td></tr>
+                        <tr><td class="row_empty">Medicine</td></tr>
+                    </table>
+                </td>
+                <td class="column nodash">
+                    <table>
+                        <tr><th class="row_header sticky">8.7.2016</th></tr>
+                        <tr><td class="row">Rutina</td></tr>
+                        <tr><td class="row">Schedule</td></tr>
+                        <tr><td class="row">Medicine</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
