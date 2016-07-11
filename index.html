@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
         <style>
             .horizontal {
                 display: block;
@@ -10,6 +13,7 @@
                 overflow: auto;
                 margin: auto;
                 padding:0px;
+                font-family: 'Open Sans', sans-serif;
                 -webkit-overflow-scrolling: touch;
             }
             .column {
@@ -41,24 +45,35 @@
                 width: 300px;
                 height: 100px;
                 vertical-align: top;
+                font-size: 1em;
                 text-indent: 5px;
                 border-radius: 2px;
                 padding: 10px 0px 0px 0px ;
+                box-shadow: 0 0px 0px rgba(0,0,0,0.15);
+                -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+                transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+            
+            .row:hover {
+                -webkit-transform: all 0.3s ease-in-out;
+                transform: all 0.3s ease-in-out;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             }
             .content {
                 display: block;
                 background: #f6f7f9;
                 max-height: 100px;
                 text-indent: 3px;
+                font-size: 0.5em;
                 opacity: 0.5;
                 border-radius: 2px;
-                box-shadow: 0px 0px 1px #dfe0e4;
                 margin: 2px;
                 padding: 5px 0px;
                 overflow: auto;
             }
             .done {
                 opacity: 1;
+                box-shadow: 0px 0px 2px #dfe0e4;
             }
             .left {
                 max-width: 96%;
@@ -81,29 +96,7 @@
     <body>
         <table class="horizontal">
             <tr>
-                <td class="column nodash">
-                    <table>
-                        <tr class="row_header sticky"><th >7.7.2016</th></tr>
-                        <tr><td class="row nodash">Smoking
-                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
-                            <div class="content left"><div class="margin">22:50 smoked 1 joint in toilet<br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            </div>
-                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
-                            <div class="content done">22:50 smoked 1 joint in toilet</div>
-                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
-                            <div class="content">22:50 smoked 1 joint in toilet</div>
-                            <div class="content done">22:50 smoked 1 joint in toilet</div>
-                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
-                            <div class="content">22:50 smoked 1 joint in toilet</div>
-                            </td>
-                        </tr>
-                        <tr><td class="row">Schedule<br><br>
-                            <div  class="content left">
-                                <p class="margin">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></td></tr>
-                        <tr><td class="row">Medicine</td></tr>
-                    </table>
-                </td>
+                
                 <td class="column nodash">
                     <table>
                         <tr><th class="row_header sticky">8.7.2016</th></tr>
@@ -117,21 +110,72 @@
                 <td class="column nodash">
                     <table>
                         <tr><th class="row_header sticky">9.7.2016</th></tr>
-                        <tr><td class="row nodash">Smoking
-                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
-                            <div class="content left">22:50 smoked 1 joint in toilet</div>
-                            
-                            </td></tr>
+                        <tr><td class="row nodash">Smoking</td></tr>
                         <tr><td class="row">Schedule</td></tr>
                         <tr><td class="row">Medicine</td></tr>
                     </table>
                 </td>
                 <td class="column nodash">
                     <table>
-                        <tr><th class="row_header sticky">8.7.2016</th></tr>
-                        <tr><td class="row nodash">Smoking</td></tr>
+                        <tr><th class="row_header sticky">10.7.2016</th></tr>
+                        <tr><td class="row nodash">Smoking
+                            <div class="content done">19:50 smoked 1 joint in bathroom</div>
+                            <div class="content done">22:50 smoked 1 joint in toilet</div>
+                            </td></tr>
                         <tr><td class="row">Schedule</td></tr>
                         <tr><td class="row">Medicine</td></tr>
+                    </table>
+                </td>
+                <td class="column nodash"><div style="width:50px"></div></td>
+                <td class="column nodash">
+                    <table>
+                        <tr><th class="row_header sticky">Mon 11.7.2016</th></tr>
+                        <tr><td class="row nodash">Health
+                            <div class="content">xx:xx sleep</div>
+                            <div class="content done">8:45 morning regular toilet</div>
+                            <div class="content">8:50 morning regular jerk</div>
+                            </td></tr>
+                        <tr><td class="row nodash">Health (Medicine)
+                            <div class="content done">08:40 Carteol LP</div>
+                            <div class="content ">20:50 Taflotan</div>
+                            </td></tr>
+                        <tr><td class="row nodash">Health (Gym-Sport-Move)
+                            <div class="content">xx:xx WClass sauna</div>
+                            <div class="content">xx:xx zabehať si 3km</div>
+                            </td>
+                        <tr><td class="row">Work
+                            <div class="content">12:00 Koupit VW</div>
+                            <div class="content">14:00 otestovat Koupit VW</div>
+                            <div class="content">14:05 poslat Kamilovy mail o Homeoffice dnes</div>
+                            <div class="content">14:05 poslat Davidovy mail o vyplate</div>
+                            </td></tr>
+                        <tr><td class="row">Money
+                            <div class="content">xx:xx + 11200 CZK Salary July</div>
+                            </td>
+                        </tr>
+                        <tr><td class="row nodash">Money (Shopping list)
+                            <div class="content">xx:xx zaplatiť PPAS</div>
+                            <div class="content">xx:xx zaplatiť VF</div>
+                            <div class="content">xx:xx skontrolovať PRE</div>
+                            </td>
+                        </tr>
+                        <tr><td class="row">Household
+                            <div class="content">xx:xx umyť riady</div>
+                            <div class="content">xx:xx poliať kvety</div>
+                            <div class="content">xx:xx oprať: dať prať</div>
+                            <div class="content">xx:xx oprať: vyvešať</div>
+                            <div class="content">xx:xx oprať: zložiť</div>
+                            </td></tr>
+                        
+                        <tr><td class="row">Social
+                            <div class="content done">xx:xx Kamilovy som poslal správu</div>
+                            </td>
+                        <tr><td class="row">Food'n'Drink
+                            <div class="content done">08:50 +100ml water</div>
+                            </td>
+                        <tr><td class="row">Relax (Music/Movie/Book)
+                            <div class="content">xx:xx yts some animated comedy</div>
+                            </td>
                     </table>
                 </td>
             </tr>
