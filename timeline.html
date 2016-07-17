@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Timeline (vertical)</title>
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <style>
+            .container {
+                padding: 20px;
+            }
+            .notificationBar {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: relative;
+            }
+            .notificationBar li {
+                margin-top: 80px;
+            }
+            
+            .content {
+                margin-left: 160px;
+                margin-top: -30px;
+                border: 1px solid #ddd;
+                padding: 5px;
+                background-color: white;
+            }
+            .time {
+                min-width: 72px;
+                margin-left: 0px;
+                margin-top: -30px;
+                border: 1px solid #ddd;
+                position: absolute;
+                color: #ddd;
+                text-align: right;
+                font-size: 10px;
+            }
+            .time:after {
+                content: '';
+                width: 60px;
+                height: 1px;
+                position: absolute;
+                background-color: #ddd;
+                top: 13px;
+                margin-left: 5px; 
+                z-index: -1;
+            }
+            
+            .notificationBar li i {
+                float:top;
+                width: 30px;
+                min-height: 30px;
+                display: block;
+                text-align: center;
+                line-height: 30px;
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                background-color: white;
+                margin-left: 100px;
+            }
+            
+            
+            .notificationBar li i:after {
+                content: '';
+                width: 60px;
+                height: 1px;
+                position: absolute;
+                background-color: #ddd;
+                margin-top: 15px;
+                z-index: -1;
+            }
+            .notificationBar:after {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: #ddd;
+                position: absolute;
+                top: 4px;
+                left: 55px;
+                z-index: -1;
+                margin-left: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul class="notificationBar">
+                <li>
+                    <i class="ion-checkmark"></i>
+                    <div class="time">21:00</div>
+                    <div class="content">First notification</div>
+                </li>
+                <li>
+                    <i class="ion-plus" style="height:70px; border-radius:50px;background-color:grey;color:white"></i>
+                    <div class="time" style="margin-top: -70px">22:13<br>23/07/16</div>
+                    <div class="content" style="margin-top: -70px">Third notification<br><br>Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při ...</div>
+                </li>
+                <li>
+                    <i class="ion-paper-airplane"></i>
+                    <div class="time" style="margin-top: px">23:00<br>24/7/16</div>
+                    <div class="content" style="margin-top: -px">Second notification</div>
+                </li>
+                <li>
+                    <i class="ion-plus"></i>
+                    <div class="time" style="margin-top: -px">00:13<br>24.07.2016</div>
+                    <div class="content" style="margin-top: -px">Third notification</div>
+                </li>
+                <li>
+                    <i class="ion-plus"></i>
+                    <div class="time" style="margin-top: -px">00:13<br></div>
+                    <div class="content" style="margin-top: -px">Third notification</div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
